@@ -17,7 +17,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initRecyclerView()
     }
+
+    private fun initRecyclerView() {
+        TODO("Not yet implemented")
+    }
+
     private fun getRetrofit():Retrofit{
         return Retrofit.Builder()
             .baseUrl("https://dog.ceo/api/breed/")
